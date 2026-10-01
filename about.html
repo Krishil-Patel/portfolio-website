@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="About Krishil Patel: Rutgers Computer Science and Applied Physics student focused on AI, agentic systems, backend engineering, data, and cloud.">
+  <meta name="theme-color" content="#f6f3ea">
+  <title>About — Krishil Patel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav-wrap">
+  <nav class="nav" id="nav" aria-label="Primary navigation">
+    <a class="brand" href="index.html">Krishil Patel<span class="brand-dot">.</span></a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="navLinks">Menu</button>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a><a href="work.html">Work</a><a href="experience.html">Experience</a><a class="active" href="about.html">About</a><a href="contact.html">Contact</a><a class="nav-cta" href="resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+    </div>
+  </nav>
+</header>
+<main>
+  <section class="page-hero">
+    <div class="shell about-grid">
+      <div class="about-copy">
+        <p class="eyebrow"><span>About</span></p>
+        <h2 data-reveal>I like systems with moving parts.</h2>
+        <p class="big" data-reveal style="--delay:80ms">
+          I’m most interested in problems where AI cannot live by itself — where models and agents have to connect with APIs,
+          data, state, cloud infrastructure, and a real user experience.
+        </p>
+        <p class="small" data-reveal style="--delay:140ms">
+          That is why my projects tend to grow beyond isolated experiments. I like understanding how a system behaves end to end,
+          where it can fail, how people interact with it, and what engineering decisions make it more reliable.
+        </p>
+      </div>
+
+      <div class="profile-facts" data-reveal style="--delay:120ms">
+        <div class="fact"><div class="label">University</div><strong>Rutgers University — New Brunswick</strong></div>
+        <div class="fact"><div class="label">Degree</div><strong>B.S. Computer Science & Applied Physics</strong></div>
+        <div class="fact"><div class="label">Expected graduation</div><strong>May 2027</strong></div>
+        <div class="fact"><div class="label">GPA</div><strong>3.84 / 4.0</strong></div>
+        <div class="fact"><div class="label">Focus</div><strong>AI/ML · Generative AI · Agentic Systems · Backend · Cloud</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-rule">
+    <div class="shell">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow"><span>Capabilities</span></p>
+          <h2 data-reveal>One stack, connected.</h2>
+        </div>
+        <p class="lead" data-reveal style="--delay:100ms">
+          I organize technologies by what they help me build, not as an isolated wall of logos.
+          The recurring goal is to connect reasoning, software, data, infrastructure, and interface into a coherent system.
+        </p>
+      </div>
+
+      <div class="objective-grid">
+        <article class="objective-card" data-reveal>
+          <div class="num">AI</div>
+          <h3>AI & Agentic Systems</h3>
+          <p>LangChain, LangGraph, OpenAI SDK, CrewAI, DeepAgents, RAG, NLP, BERT, transformers, prompt engineering, and human-in-the-loop workflows.</p>
+        </article>
+        <article class="objective-card" data-reveal style="--delay:80ms">
+          <div class="num">BE</div>
+          <h3>Backend & Data</h3>
+          <p>Java, Python, Spring Boot, FastAPI, REST APIs, Spring Data JPA, Flyway, Pydantic, PostgreSQL, Aurora, MSSQL, SQLite, caching, and data pipelines.</p>
+        </article>
+        <article class="objective-card" data-reveal style="--delay:160ms">
+          <div class="num">CL</div>
+          <h3>Cloud & Product</h3>
+          <p>AWS ECS Fargate, Lambda, API Gateway, Cognito, KMS, S3, ALB, Route 53, AWS CDK, Docker, React, TypeScript, Vite, and CI/CD.</p>
+        </article>
+      </div>
+
+      <div class="two-col">
+        <section class="panel" data-reveal>
+          <p class="eyebrow"><span>Education</span></p>
+          <h3>Computer Science meets Applied Physics.</h3>
+          <p>
+            Relevant coursework includes Artificial Intelligence, Machine Learning Principles, Data Structures, Algorithms,
+            Computer Architecture, Information & Data Management, Numerical Analysis, Discrete Structures II,
+            Modern Physics, Advanced General Physics, Analytical Physics, and Modern Instrumentation.
+          </p>
+        </section>
+
+        <section class="panel" data-reveal style="--delay:100ms">
+          <p class="eyebrow"><span>Certifications</span></p>
+          <h3>Professional learning.</h3>
+          <ul class="list-clean">
+            <li><strong>Completed:</strong> Oracle Java Foundations (1Z0-811)</li>
+            <li><strong>In progress:</strong> AWS Certified Developer — Associate</li>
+            <li><strong>In progress:</strong> Oracle Java SE 17 Developer (1Z0-829)</li>
+            <li><strong>In progress:</strong> Oracle Database SQL Certified Associate (1Z0-071)</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="shell footer-row">
+    <span>© <span id="year"></span> Krishil Patel</span>
+    <span>AI · Software Engineering · Data · Cloud</span>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

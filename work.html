@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Selected engineering projects by Krishil Patel, including RiskIQ and a cloud-native virtual asset management platform.">
+  <meta name="theme-color" content="#f6f3ea">
+  <title>Work — Krishil Patel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav-wrap">
+  <nav class="nav" id="nav" aria-label="Primary navigation">
+    <a class="brand" href="index.html">Krishil Patel<span class="brand-dot">.</span></a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="navLinks">Menu</button>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a><a class="active" href="work.html">Work</a><a href="experience.html">Experience</a><a href="about.html">About</a><a href="contact.html">Contact</a><a class="nav-cta" href="resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+    </div>
+  </nav>
+</header>
+<main>
+  <section class="page-hero">
+    <div class="shell page-hero-grid">
+      <div>
+        <p class="eyebrow"><span>Work</span></p>
+        <h1 data-reveal>Engineering depth, made visible.</h1>
+        <p class="lead" data-reveal style="--delay:100ms">
+          This page focuses on the systems that best represent how I work: agentic workflows, backend architecture,
+          data pipelines, cloud infrastructure, and user-facing applications built as one connected product.
+        </p>
+      </div>
+      <figure class="hero-image" data-reveal style="--delay:140ms">
+        <img src="assets/riskiq.svg" alt="RiskIQ multi-agent workflow diagram showing control, investigation, validation, human review, and reporting.">
+      </figure>
+    </div>
+  </section>
+
+  <section class="section section-rule" id="riskiq">
+    <div class="shell project-card">
+      <div class="project-copy">
+        <p class="eyebrow"><span>01 / Agentic AI Platform</span></p>
+        <h2 data-reveal>RiskIQ</h2>
+        <p data-reveal style="--delay:80ms">
+          A multi-agent operations platform for risk, fraud, forecasting, and model-governance workflows.
+          The design replaces generic chatbot interaction with guided, auditable flows and explicit human review.
+        </p>
+        <div class="tech-row">
+          <span class="pill">Python</span><span class="pill">FastAPI</span><span class="pill">LangGraph</span>
+          <span class="pill">DeepAgents</span><span class="pill">Cognee</span><span class="pill">React</span>
+          <span class="pill">TypeScript</span><span class="pill">SQLite</span>
+        </div>
+        <h4>Problem</h4>
+        <p>Risk operations need structured analysis, traceability, workflow state, and human approval rather than unbounded conversational responses.</p>
+        <h4>Solution</h4>
+        <p>Specialist agents coordinate investigation, root-cause analysis, forecast explanation, model validation, communication, and reporting while persisting state and memory.</p>
+        <h4>Engineering focus</h4>
+        <ul>
+          <li>FastAPI backend with Pydantic-typed schemas and SQLite-backed workflow state.</li>
+          <li>Human-in-the-loop review, revision, approval, and rejection paths.</li>
+          <li>Cognee-based memory for prior decisions, reusable guidance, investigation patterns, and case history.</li>
+          <li>React/TypeScript console for traces, approval states, memory views, logs, and reporting.</li>
+        </ul>
+        <div class="cta-row" style="margin-top:26px">
+          <a class="btn btn-primary" href="https://github.com/Krishil-Patel/riskiq-agentic-risk-platform/tree/main" target="_blank" rel="noreferrer">Open repository →</a>
+        </div>
+      </div>
+      <figure class="project-image" data-reveal style="--delay:120ms">
+        <img src="assets/riskiq.svg" alt="RiskIQ architecture illustration showing specialist agent workflows and human review.">
+      </figure>
+    </div>
+  </section>
+
+  <section class="section section-rule" id="asset-platform">
+    <div class="shell project-card">
+      <div class="project-copy">
+        <p class="eyebrow"><span>02 / Cloud-Native Full Stack</span></p>
+        <h2 data-reveal>Virtual Asset Management</h2>
+        <p data-reveal style="--delay:80ms">
+          A financial platform that combines a large Spring Boot API, scheduled market-data ingestion,
+          relational persistence, AWS infrastructure, a React analytics experience, and a Gemini-powered financial advisor.
+        </p>
+        <div class="tech-row">
+          <span class="pill">Java</span><span class="pill">Spring Boot 3</span><span class="pill">React</span>
+          <span class="pill">AWS</span><span class="pill">PostgreSQL</span><span class="pill">Aurora</span>
+          <span class="pill">Gemini</span><span class="pill">AWS CDK</span>
+        </div>
+        <h4>System scope</h4>
+        <p>Approximately 70 REST endpoints across about 18 controller groups for authentication, portfolios, holdings, transactions, market data, analytics, AI, and administrative workflows.</p>
+        <h4>Data + AI</h4>
+        <p>Scheduled ingestion integrates Finnhub, CoinGecko, and Yahoo Finance with caching and time-series persistence, while Gemini consumes structured portfolio context for grounded reports and questions.</p>
+        <h4>Cloud + security</h4>
+        <ul>
+          <li>AWS CDK provisions API Gateway, Lambda, ECS Fargate, Aurora RDS, Cognito, KMS, ALB, and Route 53.</li>
+          <li>Spring Security and Cognito/OAuth2 protect user-facing workflows.</li>
+          <li>React, TypeScript, Vite, and Recharts provide portfolio tracking and analytics.</li>
+        </ul>
+        <div class="cta-row" style="margin-top:26px">
+          <a class="btn btn-primary" href="https://github.com/Krishil-Patel" target="_blank" rel="noreferrer">GitHub profile →</a>
+        </div>
+      </div>
+      <figure class="project-image" data-reveal style="--delay:120ms">
+        <img src="assets/asset-platform.svg" alt="Architecture diagram for the virtual asset management platform connecting market data, Spring Boot, databases, Gemini, React, and AWS.">
+      </figure>
+    </div>
+  </section>
+
+  <section class="section section-rule">
+    <div class="shell">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow"><span>Additional projects</span></p>
+          <h2 data-reveal>More work.</h2>
+        </div>
+        <p class="lead" data-reveal style="--delay:100ms">
+          These projects show additional range across backend integration, full-stack development, accessibility-focused robotics,
+          CI/CD, testing, databases, and transformer-based NLP.
+        </p>
+      </div>
+
+      <div class="archive">
+        <article class="archive-item" data-reveal>
+          <div class="year">2025</div>
+          <div>
+            <h3>Unified Academic Registration Platform</h3>
+            <p>Led backend integration for a hackathon platform unifying three academic systems through REST-based service communication, with MSSQL tuning, caching, JUnit testing, GitLab CI/CD, and Jenkins.</p>
+          </div>
+          <div class="archive-tech">Java · Spring Boot · MSSQL · GitLab · Jenkins · JUnit</div>
+        </article>
+
+        <article class="archive-item" data-reveal>
+          <div class="year">2024</div>
+          <div>
+            <h3>Course Management & Content Portal</h3>
+            <p>Built a course management platform with secure REST APIs, role-based access control, JUnit testing, Agile delivery workflows, and UI enhancements recognized with a 3rd-place UI/UX award.</p>
+          </div>
+          <div class="archive-tech">Java · Spring Boot · HTML · CSS · JIRA · Confluence</div>
+        </article>
+
+        <article class="archive-item" data-reveal>
+          <div class="year">2024</div>
+          <div>
+            <h3>NaviGuide — Room Navigation System</h3>
+            <p>Developed an Arduino + Python computer-vision prototype for indoor navigation, obstacle detection, and auditory turn-by-turn guidance for visually impaired users.</p>
+          </div>
+          <div class="archive-tech">Python · Arduino · Computer Vision · Robotics</div>
+        </article>
+
+        <article class="archive-item" data-reveal>
+          <div class="year">2024</div>
+          <div>
+            <h3>Airline Corporate Sentiment Analyzer</h3>
+            <p>Built a BERT-based NLP pipeline across 50,000+ text records, combining preprocessing, sentiment analysis, topic modeling, predictive analytics, and visualization.</p>
+          </div>
+          <div class="archive-tech">Python · BERT · NLTK · Pandas · scikit-learn</div>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="shell footer-row">
+    <span>© <span id="year"></span> Krishil Patel</span>
+    <span>AI · Software Engineering · Data · Cloud</span>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
