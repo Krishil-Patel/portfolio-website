@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" role="img" aria-labelledby="t d">
+<title id="t">RiskIQ multi-agent workflow diagram</title>
+<desc id="d">A diagram of agentic risk operations with batch control, investigations, model validation, human review and reporting.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#e8edff"/>
+    <stop offset=".6" stop-color="#c7d5ff"/>
+    <stop offset="1" stop-color="#f7d6cf"/>
+  </linearGradient>
+</defs>
+<rect width="1200" height="820" rx="46" fill="url(#bg)"/>
+<text x="70" y="80" font-family="Arial" font-size="28" font-weight="700" fill="#142238">RiskIQ — guided, auditable agent operations</text>
+<text x="70" y="116" font-family="Arial" font-size="18" fill="#58647a">Specialist agents + workflow state + memory + human adjudication</text>
+<g font-family="Arial" fill="#142238">
+  <g transform="translate(70,180)">
+    <rect width="290" height="150" rx="24" fill="#fff" fill-opacity=".72" stroke="#142238" stroke-opacity=".14"/>
+    <text x="24" y="42" font-size="14" font-weight="700" opacity=".55">01 / CONTROL</text>
+    <text x="24" y="83" font-size="25" font-weight="700">Batch + Feature</text>
+    <text x="24" y="113" font-size="25" font-weight="700">Readiness</text>
+  </g>
+  <g transform="translate(455,180)">
+    <rect width="290" height="150" rx="24" fill="#fff" fill-opacity=".72" stroke="#142238" stroke-opacity=".14"/>
+    <text x="24" y="42" font-size="14" font-weight="700" opacity=".55">02 / INVESTIGATE</text>
+    <text x="24" y="83" font-size="25" font-weight="700">Fraud + Anomaly</text>
+    <text x="24" y="113" font-size="25" font-weight="700">Investigation</text>
+  </g>
+  <g transform="translate(840,180)">
+    <rect width="290" height="150" rx="24" fill="#fff" fill-opacity=".72" stroke="#142238" stroke-opacity=".14"/>
+    <text x="24" y="42" font-size="14" font-weight="700" opacity=".55">03 / GOVERN</text>
+    <text x="24" y="83" font-size="25" font-weight="700">Model</text>
+    <text x="24" y="113" font-size="25" font-weight="700">Validation</text>
+  </g>
+  <g transform="translate(70,475)">
+    <rect width="290" height="150" rx="24" fill="#fff" fill-opacity=".72" stroke="#142238" stroke-opacity=".14"/>
+    <text x="24" y="42" font-size="14" font-weight="700" opacity=".55">04 / EXPLAIN</text>
+    <text x="24" y="83" font-size="25" font-weight="700">Forecast</text>
+    <text x="24" y="113" font-size="25" font-weight="700">Reasoning</text>
+  </g>
+  <g transform="translate(455,475)">
+    <rect width="290" height="150" rx="24" fill="#fff" fill-opacity=".86" stroke="#2e5bff" stroke-width="2"/>
+    <text x="24" y="42" font-size="14" font-weight="700" fill="#2e5bff">05 / HUMAN REVIEW</text>
+    <text x="24" y="83" font-size="25" font-weight="700">Approve · Revise</text>
+    <text x="24" y="113" font-size="25" font-weight="700">Reject</text>
+  </g>
+  <g transform="translate(840,475)">
+    <rect width="290" height="150" rx="24" fill="#fff" fill-opacity=".72" stroke="#142238" stroke-opacity=".14"/>
+    <text x="24" y="42" font-size="14" font-weight="700" opacity=".55">06 / OUTPUT</text>
+    <text x="24" y="83" font-size="25" font-weight="700">Reports + Audit</text>
+    <text x="24" y="113" font-size="25" font-weight="700">Records</text>
+  </g>
+</g>
+<g stroke="#142238" stroke-width="5" stroke-opacity=".35" fill="none" stroke-linecap="round">
+  <path d="M360 255 H455"/><path d="M745 255 H840"/>
+  <path d="M985 330 C985 390 985 415 985 475"/>
+  <path d="M840 550 H745"/><path d="M455 550 H360"/>
+  <path d="M215 475 C215 405 215 385 215 330"/>
+</g>
+<g font-family="Arial">
+  <rect x="345" y="690" width="510" height="70" rx="22" fill="#142238"/>
+  <text x="382" y="733" font-size="20" font-weight="700" fill="#f6f3ea">Shared memory · typed state · traceable decisions</text>
+</g>
+</svg>

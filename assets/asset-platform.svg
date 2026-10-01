@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" role="img" aria-labelledby="t d">
+<title id="t">Virtual asset management platform architecture</title>
+<desc id="d">Architecture connecting market data providers, Spring Boot APIs, databases, analytics, Gemini AI and a React interface.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#fff2c5"/>
+    <stop offset=".52" stop-color="#f5d683"/>
+    <stop offset="1" stop-color="#d7ebdd"/>
+  </linearGradient>
+</defs>
+<rect width="1200" height="820" rx="46" fill="url(#bg)"/>
+<text x="70" y="80" font-family="Arial" font-size="28" font-weight="700" fill="#142238">Virtual Asset Management — from data to decision</text>
+<text x="70" y="116" font-family="Arial" font-size="18" fill="#58647a">Market ingestion + Spring Boot services + cloud infrastructure + AI advisor + React analytics</text>
+<g font-family="Arial" fill="#142238">
+  <g transform="translate(55,195)">
+    <rect width="220" height="138" rx="24" fill="#fff" fill-opacity=".72" stroke="#142238" stroke-opacity=".14"/>
+    <text x="22" y="42" font-size="14" font-weight="700" opacity=".55">INGEST</text>
+    <text x="22" y="80" font-size="23" font-weight="700">Market Data</text>
+    <text x="22" y="110" font-size="17" opacity=".7">Finnhub · CoinGecko</text>
+  </g>
+  <g transform="translate(335,195)">
+    <rect width="220" height="138" rx="24" fill="#fff" fill-opacity=".72" stroke="#142238" stroke-opacity=".14"/>
+    <text x="22" y="42" font-size="14" font-weight="700" opacity=".55">SERVE</text>
+    <text x="22" y="80" font-size="23" font-weight="700">Spring Boot 3</text>
+    <text x="22" y="110" font-size="17" opacity=".7">~70 REST endpoints</text>
+  </g>
+  <g transform="translate(615,195)">
+    <rect width="220" height="138" rx="24" fill="#fff" fill-opacity=".72" stroke="#142238" stroke-opacity=".14"/>
+    <text x="22" y="42" font-size="14" font-weight="700" opacity=".55">PERSIST</text>
+    <text x="22" y="80" font-size="23" font-weight="700">PostgreSQL</text>
+    <text x="22" y="110" font-size="17" opacity=".7">Aurora · Flyway</text>
+  </g>
+  <g transform="translate(895,195)">
+    <rect width="250" height="138" rx="24" fill="#fff" fill-opacity=".72" stroke="#142238" stroke-opacity=".14"/>
+    <text x="22" y="42" font-size="14" font-weight="700" opacity=".55">ANALYZE</text>
+    <text x="22" y="80" font-size="23" font-weight="700">Portfolio Logic</text>
+    <text x="22" y="110" font-size="17" opacity=".7">holdings · time series</text>
+  </g>
+  <g transform="translate(250,505)">
+    <rect width="280" height="145" rx="24" fill="#fff" fill-opacity=".78" stroke="#142238" stroke-opacity=".14"/>
+    <text x="24" y="42" font-size="14" font-weight="700" opacity=".55">REASON</text>
+    <text x="24" y="84" font-size="25" font-weight="700">Gemini Advisor</text>
+    <text x="24" y="114" font-size="17" opacity=".7">grounded portfolio context</text>
+  </g>
+  <g transform="translate(670,505)">
+    <rect width="280" height="145" rx="24" fill="#fff" fill-opacity=".78" stroke="#2e5bff" stroke-width="2"/>
+    <text x="24" y="42" font-size="14" font-weight="700" fill="#2e5bff">EXPERIENCE</text>
+    <text x="24" y="84" font-size="25" font-weight="700">React Analytics</text>
+    <text x="24" y="114" font-size="17" opacity=".7">tracking · reports · chat</text>
+  </g>
+</g>
+<g stroke="#142238" stroke-width="5" stroke-opacity=".35" fill="none" stroke-linecap="round">
+  <path d="M275 264 H335"/><path d="M555 264 H615"/><path d="M835 264 H895"/>
+  <path d="M1015 333 C1015 410 880 445 820 505"/>
+  <path d="M615 264 C545 360 470 440 410 505"/>
+  <path d="M530 578 H670"/>
+</g>
+<rect x="338" y="705" width="524" height="62" rx="20" fill="#142238"/>
+<text x="380" y="744" font-family="Arial" font-size="19" font-weight="700" fill="#f6f3ea">AWS CDK · Cognito · KMS · ECS Fargate · Lambda</text>
+</svg>

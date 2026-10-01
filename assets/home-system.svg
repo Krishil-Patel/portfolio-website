@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="t d">
+<title id="t">End-to-end intelligent systems illustration</title>
+<desc id="d">An abstract editorial diagram connecting AI, backend, data, cloud and product layers.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#dfe7ff"/>
+    <stop offset=".55" stop-color="#c5d2ff"/>
+    <stop offset="1" stop-color="#ffd6cc"/>
+  </linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="12" stdDeviation="22" flood-color="#142238" flood-opacity=".10"/>
+  </filter>
+</defs>
+<rect width="1200" height="900" rx="48" fill="url(#bg)"/>
+<circle cx="1020" cy="130" r="180" fill="#7c65ff" opacity=".18"/>
+<circle cx="180" cy="780" r="220" fill="#ffd65c" opacity=".28"/>
+<g filter="url(#shadow)" font-family="Arial, Helvetica, sans-serif">
+  <rect x="100" y="140" width="260" height="150" rx="28" fill="#ffffff" fill-opacity=".72"/>
+  <text x="130" y="195" font-size="24" font-weight="700" fill="#142238">AI + Agents</text>
+  <text x="130" y="235" font-size="17" fill="#566176">reason · tools · memory</text>
+  <text x="130" y="262" font-size="17" fill="#566176">structured outputs</text>
+
+  <rect x="470" y="110" width="260" height="150" rx="28" fill="#ffffff" fill-opacity=".72"/>
+  <text x="500" y="165" font-size="24" font-weight="700" fill="#142238">Backend</text>
+  <text x="500" y="205" font-size="17" fill="#566176">APIs · validation</text>
+  <text x="500" y="232" font-size="17" fill="#566176">workflow state</text>
+
+  <rect x="840" y="160" width="260" height="150" rx="28" fill="#ffffff" fill-opacity=".72"/>
+  <text x="870" y="215" font-size="24" font-weight="700" fill="#142238">Data</text>
+  <text x="870" y="255" font-size="17" fill="#566176">pipelines · databases</text>
+  <text x="870" y="282" font-size="17" fill="#566176">analytics · context</text>
+
+  <rect x="270" y="520" width="260" height="150" rx="28" fill="#ffffff" fill-opacity=".72"/>
+  <text x="300" y="575" font-size="24" font-weight="700" fill="#142238">Cloud</text>
+  <text x="300" y="615" font-size="17" fill="#566176">AWS · security</text>
+  <text x="300" y="642" font-size="17" fill="#566176">deploy · observe</text>
+
+  <rect x="670" y="520" width="260" height="150" rx="28" fill="#ffffff" fill-opacity=".72"/>
+  <text x="700" y="575" font-size="24" font-weight="700" fill="#142238">Product</text>
+  <text x="700" y="615" font-size="17" fill="#566176">React · UX · workflows</text>
+  <text x="700" y="642" font-size="17" fill="#566176">human decisions</text>
+</g>
+<g stroke="#142238" stroke-opacity=".35" stroke-width="5" fill="none" stroke-linecap="round">
+  <path d="M360 215 C420 190 425 180 470 180"/>
+  <path d="M730 185 C770 185 800 205 840 225"/>
+  <path d="M565 260 C540 340 460 420 400 520"/>
+  <path d="M965 310 C930 390 860 440 815 520"/>
+  <path d="M530 595 C575 595 625 595 670 595"/>
+</g>
+<g fill="#142238" opacity=".45">
+  <circle cx="400" cy="198" r="8"/><circle cx="780" cy="197" r="8"/><circle cx="520" cy="367" r="8"/><circle cx="893" cy="409" r="8"/><circle cx="600" cy="595" r="8"/>
+</g>
+<text x="100" y="810" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700" fill="#142238">One connected system.</text>
+<text x="100" y="853" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#566176">AI only becomes useful when the rest of the engineering works with it.</text>
+</svg>

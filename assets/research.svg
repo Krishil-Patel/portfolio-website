@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 680" role="img" aria-labelledby="t d">
+<title id="t">NLP research pipeline illustration</title>
+<desc id="d">A research workflow showing social posts, preprocessing, BERT and transformer analysis, and visualized insights.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#e9efff"/>
+    <stop offset="1" stop-color="#f5d8d1"/>
+  </linearGradient>
+</defs>
+<rect width="1000" height="680" rx="42" fill="url(#bg)"/>
+<text x="60" y="78" font-family="Arial" font-size="28" font-weight="700" fill="#142238">Research workflow — millions of social posts</text>
+<g font-family="Arial" fill="#142238">
+  <g transform="translate(60,160)">
+    <rect width="190" height="130" rx="22" fill="#fff" fill-opacity=".74"/>
+    <text x="22" y="44" font-size="14" font-weight="700" opacity=".55">01</text>
+    <text x="22" y="78" font-size="22" font-weight="700">Collect</text>
+    <text x="22" y="104" font-size="16" opacity=".7">Twitter/X · Reddit</text>
+  </g>
+  <g transform="translate(305,160)">
+    <rect width="190" height="130" rx="22" fill="#fff" fill-opacity=".74"/>
+    <text x="22" y="44" font-size="14" font-weight="700" opacity=".55">02</text>
+    <text x="22" y="78" font-size="22" font-weight="700">Prepare</text>
+    <text x="22" y="104" font-size="16" opacity=".7">clean · normalize</text>
+  </g>
+  <g transform="translate(550,160)">
+    <rect width="190" height="130" rx="22" fill="#fff" fill-opacity=".74"/>
+    <text x="22" y="44" font-size="14" font-weight="700" opacity=".55">03</text>
+    <text x="22" y="78" font-size="22" font-weight="700">Model</text>
+    <text x="22" y="104" font-size="16" opacity=".7">BERT · transformers</text>
+  </g>
+  <g transform="translate(795,160)">
+    <rect width="145" height="130" rx="22" fill="#fff" fill-opacity=".74"/>
+    <text x="22" y="44" font-size="14" font-weight="700" opacity=".55">04</text>
+    <text x="22" y="78" font-size="22" font-weight="700">Explain</text>
+    <text x="22" y="104" font-size="16" opacity=".7">trends</text>
+  </g>
+</g>
+<g stroke="#142238" stroke-width="4" stroke-opacity=".34" fill="none">
+  <path d="M250 225 H305"/><path d="M495 225 H550"/><path d="M740 225 H795"/>
+</g>
+<g transform="translate(95,395)">
+  <rect width="810" height="180" rx="28" fill="#142238"/>
+  <polyline points="45,125 120,95 205,110 300,62 385,86 470,56 560,92 655,46 735,69" fill="none" stroke="#ffd65c" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="45,82 130,105 215,65 305,91 390,52 480,88 565,66 650,101 735,78" fill="none" stroke="#bcebd4" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="40" y="38" font-family="Arial" font-size="18" font-weight="700" fill="#f6f3ea">Sentiment shifts · narrative framing · regional discourse</text>
+</g>
+</svg>
