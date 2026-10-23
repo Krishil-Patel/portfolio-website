@@ -14,6 +14,19 @@ if(menuBtn && navLinks){
     menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
   });
 
+  document.addEventListener("keydown", event => {
+    if(event.key === "Escape" && navLinks.classList.contains("open")) {
+      navLinks.classList.remove("open");
+      menuBtn.setAttribute("aria-expanded", "false");
+      menuBtn.focus();
+    }
+  });
+  document.addEventListener("click", event => {
+    if(!nav.contains(event.target)) {
+      navLinks.classList.remove("open");
+      menuBtn.setAttribute("aria-expanded", "false");
+    }
+  });
   navLinks.querySelectorAll("a").forEach(a => {
     a.addEventListener("click", () => {
       navLinks.classList.remove("open");
