@@ -6,7 +6,7 @@
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="Selected engineering projects by Krishil Patel, including RiskIQ and a cloud-native virtual asset management platform." name="description"/>
 <meta content="#f6f3ea" name="theme-color"/>
-<title>Work — Krishil Patel</title>
+<title>Work – Krishil Patel</title>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
@@ -27,10 +27,9 @@
 <div class="shell narrow-hero">
 <div>
 <p class="eyebrow"><span>Work</span></p>
-<h1 data-reveal="">Engineering depth, made visible.</h1>
+<h1 data-reveal="">Projects I’ve worked on</h1>
 <p class="lead" data-reveal="" style="--delay:100ms">
-          This page focuses on the systems that best represent how I work: agentic workflows, backend architecture,
-          data pipelines, cloud infrastructure, and user-facing applications built as one connected product.
+          These projects gave me experience working on the different parts of an application. I explain the problems I was trying to solve, how the systems work, and the tools I used to build them.
         </p>
 </div>
 </div>
@@ -40,25 +39,25 @@
 <div class="project-copy">
 <p class="eyebrow"><span>01 / Agentic AI Platform</span></p>
 <h2 data-reveal="">RiskIQ</h2>
-<p data-reveal="" style="--delay:80ms">RiskIQ is a portfolio platform designed for analysts and reviewers who need traceable AI-assisted investigation, rather than free-form chatbot answers. It coordinates specialist workflows and makes evidence and approval status visible in an operations console.</p>
+<p data-reveal="" style="--delay:80ms">I built RiskIQ to explore how AI agents could support risk analysts. Instead of relying on a single chat response, the application assigns specific tasks to agents and shows the evidence, workflow progress, and human review decisions in one interface.</p>
 <div class="tech-row">
 <span class="pill">Python</span><span class="pill">FastAPI</span><span class="pill">LangGraph</span>
 <span class="pill">DeepAgents</span><span class="pill">Cognee</span><span class="pill">React</span>
 <span class="pill">TypeScript</span><span class="pill">SQLite</span>
 </div>
-<h3>Problem and intended users</h3>
-<p>Risk, fraud, and model-governance teams often need a repeatable chain from incoming records through validation, investigation, explanation, and an accountable human decision. A text response alone does not capture that process.</p>
-<h3>Architecture and workflow</h3>
-<p>React/TypeScript presents investigations, reports, traces, and approval steps. FastAPI validates requests using Pydantic, then LangGraph and DeepAgents coordinate task-specific agents. SQLite persists workflow and case state; Cognee supports contextual memory from prior work.</p>
-<h3>Engineering decisions and boundaries</h3>
-<ul><li>Separate specialist responsibilities for batch control, feature analysis, fraud and anomaly investigation, forecast explanation, model validation, case workflows, communications, and reporting.</li><li>Use explicit workflow state and structured outputs for evidence, risk rationale, root-cause summaries, and reviewable decisions.</li><li>Include human-in-the-loop review, revision, approval, and rejection instead of allowing every agent result to become an automatic action.</li><li>Persist application state in SQLite while keeping longer-lived contextual memory in Cognee; expose traces and audit context through the console.</li><li>Project scope: engineering and workflow demonstrations, not a claim of independently validated production fraud-detection performance.</li></ul>
+<h3>Why I built it</h3>
+<p>A fraud investigation may involve checking data, looking for unusual patterns, reviewing evidence, and deciding what to do next. I wanted to model that sequence so each part could be tracked and reviewed by a person.</p>
+<h3>How it works</h3>
+<p>The React and TypeScript interface displays investigations, reports, execution traces, and approval steps. FastAPI handles requests and uses Pydantic for validation. LangGraph and DeepAgents coordinate the agents, SQLite stores case and workflow information, and Cognee keeps context that can be reused in later investigations.</p>
+<h3>What I focused on</h3>
+<ul><li>I separated tasks across agents for batch control, feature analysis, fraud and anomaly investigation, forecasting, model validation, case management, communications, and reporting.</li><li>I used workflow state and structured outputs to keep evidence, risk explanations, root-cause summaries, and review decisions organized.</li><li>I added review steps so people can revise, approve, or reject agent results before they lead to further action.</li><li>SQLite stores application state, while Cognee stores context from earlier work. The console lets users inspect traces and decision history.</li><li>This is an engineering project that demonstrates workflows and system design. I have not independently validated it as a production fraud-detection system.</li></ul>
 <div class="cta-row" style="margin-top:26px">
 <a class="btn btn-primary" href="https://github.com/Krishil-Patel/riskiq-agentic-risk-platform/tree/main" rel="noopener noreferrer" target="_blank">Open repository →</a>
 </div>
 </div>
 <figure class="project-image project-visual" data-reveal="" style="--delay:120ms">
 <img alt="RiskIQ architecture illustration showing specialist agent workflows and human review." decoding="async" loading="lazy" src="assets/riskiq.svg"/>
-<figcaption>Architecture overview: the console requests specialist workflows through FastAPI; agents use shared state and memory, with human-review checkpoints before decisions.</figcaption></figure>
+<figcaption>RiskIQ diagram showing how the frontend, FastAPI, specialist agents, stored state, and human review fit together.</figcaption></figure>
 </div>
 </section>
 <section class="section section-rule" id="asset-platform">
@@ -66,25 +65,25 @@
 <div class="project-copy">
 <p class="eyebrow"><span>02 / Cloud-Native Full Stack</span></p>
 <h2 data-reveal="">Virtual Asset Management</h2>
-<p data-reveal="" style="--delay:80ms">A full-stack investment application built around the everyday flow of a portfolio: receive market updates, record holdings and transactions, serve analytics, and answer portfolio-specific questions. The Spring Boot backend connects these features to a React frontend.</p>
+<p data-reveal="" style="--delay:80ms">I built this application to manage a virtual investment portfolio. It brings together market prices, holdings, transactions, and analytics, with a Gemini-powered assistant that can answer questions using portfolio data.</p>
 <div class="tech-row">
 <span class="pill">Java</span><span class="pill">Spring Boot 3</span><span class="pill">React</span>
 <span class="pill">AWS</span><span class="pill">PostgreSQL</span><span class="pill">Aurora</span>
 <span class="pill">Gemini</span><span class="pill">AWS CDK</span>
 </div>
-<h3>Backend and responsibilities</h3>
-<p>A Spring Boot 3 modular monolith exposes approximately 70 REST endpoints in roughly 18 controller groups for authentication, portfolios, holdings, transactions, market data, analytics, AI, and administration. Spring Data JPA and Flyway manage relational persistence and schema evolution.</p>
-<h3>Market data and AI integration</h3>
-<p>Scheduled jobs consume Finnhub, CoinGecko, and Yahoo Finance feeds across four asset types; caching and time-series records support analysis. The Gemini advisor receives structured JSON portfolio context to generate reports and answer questions grounded in the user’s holdings.</p>
-<h3>Infrastructure, interface, and tradeoffs</h3>
-<ul><li>React, TypeScript, Vite, and Recharts support dashboards for holdings, movements, and portfolio analytics.</li><li>AWS CDK defines infrastructure using API Gateway, Lambda, ECS Fargate, Aurora, Cognito, KMS, an Application Load Balancer, and Route 53.</li><li>Spring Security and OAuth2/Cognito handle authentication; the API remains responsible for server-side authorization and business rules.</li><li>A modular monolith keeps domain logic together while separating controllers and services. Market-feed schedules, failures, and caching require attention to freshness and consistency.</li><li>Scope and results: implemented application architecture and portfolio workflows; no public user adoption or performance benchmark is claimed.</li></ul>
+<h3>Backend and APIs</h3>
+<p>I organized the Spring Boot 3 backend as a modular monolith with approximately 70 REST endpoints across roughly 18 controller groups. They handle authentication, portfolios, holdings, transactions, market data, analytics, AI features, and administration. I used Spring Data JPA for database access and Flyway to manage schema changes.</p>
+<h3>Market data and Gemini</h3>
+<p>Scheduled jobs fetch market data from Finnhub, CoinGecko, and Yahoo Finance across four asset types. I used caching and time-series records to support portfolio analysis. For the AI assistant, I pass structured portfolio information to Gemini so its reports and answers refer to the user’s holdings.</p>
+<h3>Frontend and infrastructure</h3>
+<ul><li>I used React, TypeScript, Vite, and Recharts to build dashboards for holdings and portfolio activity.</li><li>I defined AWS infrastructure with CDK, including API Gateway, Lambda, ECS Fargate, Aurora, Cognito, KMS, an Application Load Balancer, and Route 53.</li><li>I used Spring Security with OAuth2 and Cognito for authentication, while keeping business rules and authorization checks in the backend.</li><li>I chose a modular monolith to keep related backend logic together while separating controllers and services. Market-data updates also made me think about cache freshness and failed requests.</li><li>The project demonstrates portfolio workflows and application architecture. I’m not claiming measured performance or public adoption figures.</li></ul>
 <div class="cta-row" style="margin-top:26px">
 <a class="btn btn-primary" href="https://github.com/Krishil-Patel" rel="noopener noreferrer" target="_blank">GitHub profile →</a>
 </div>
 </div>
 <figure class="project-image project-visual" data-reveal="" style="--delay:120ms">
 <img alt="Architecture diagram for the virtual asset management platform connecting market data, Spring Boot, databases, Gemini, React, and AWS." decoding="async" loading="lazy" src="assets/asset-platform.svg"/>
-<figcaption>Architecture overview: market feeds supply the Spring Boot service and database; APIs support the React dashboard and portfolio-aware Gemini analysis.</figcaption></figure>
+<figcaption>Diagram showing how market-data providers, the Spring Boot backend, database, React dashboard, and Gemini assistant connect.</figcaption></figure>
 </div>
 </section>
 <section class="section section-rule">
@@ -92,11 +91,10 @@
 <div class="section-head">
 <div>
 <p class="eyebrow"><span>Additional projects</span></p>
-<h2 data-reveal="">More work.</h2>
+<h2 data-reveal="">Other projects</h2>
 </div>
 <p class="lead" data-reveal="" style="--delay:100ms">
-          These projects show additional range across backend integration, full-stack development, accessibility-focused robotics,
-          CI/CD, testing, databases, and transformer-based NLP.
+          I have also worked on academic software, a navigation prototype, and NLP analysis. Each project helped me practice a different part of engineering, including testing, integration, and working with unfamiliar tools.
         </p>
 </div>
 <div class="archive">
@@ -104,7 +102,7 @@
 <div class="year">2025</div>
 <div>
 <h3>Unified Academic Registration Platform</h3>
-<p>At a hackathon, I led backend integration of three academic systems into one registration flow. Spring Boot services aggregated course and enrollment information while MSSQL indexing and caching supported simulated demand; I also contributed JUnit tests and CI/CD automation.</p><p class="archive-note">Focus: integrating independently designed services and testing reliability under simulated workloads.</p>
+<p>At a hackathon, I led backend integration of three academic systems into one registration flow. Spring Boot services aggregated course and enrollment information while MSSQL indexing and caching supported simulated demand. I also contributed JUnit tests and CI/CD automation.</p><p class="archive-note">I learned how much careful API integration matters when separate systems need to work together.</p>
 </div>
 <div class="archive-tech">Java · Spring Boot · MSSQL · GitLab · Jenkins · JUnit</div>
 </article>
@@ -112,15 +110,15 @@
 <div class="year">2024</div>
 <div>
 <h3>Course Management &amp; Content Portal</h3>
-<p>I worked on a course portal to simplify course creation and content publishing. I implemented Spring Boot REST APIs with role-based access rules, supported automated tests, and contributed interface changes that received a third-place UI/UX recognition.</p><p class="archive-note">Focus: API authorization, maintainable course workflows, and accessible presentation.</p>
+<p>I worked on a course portal to simplify course creation and content publishing. I implemented Spring Boot REST APIs with role-based access rules, supported automated tests, and contributed interface changes that received a third-place UI/UX recognition.</p><p class="archive-note">This project gave me practice with API permissions, testing, and interface design.</p>
 </div>
 <div class="archive-tech">Java · Spring Boot · HTML · CSS · JIRA · Confluence</div>
 </article>
 <article class="archive-item" data-reveal="">
 <div class="year">2024</div>
 <div>
-<h3>NaviGuide — Room Navigation System</h3>
-<p>I built a controlled indoor-navigation prototype to help visually impaired users receive spoken guidance. Python computer vision identified paths and obstacles while Arduino robotics handled movement; the demonstration used simulated cone obstacles rather than uncontrolled real-world navigation.</p><p class="archive-note">Focus: connecting sensing, routing decisions, and understandable audio feedback.</p>
+<h3>NaviGuide – Room Navigation System</h3>
+<p>I built a controlled indoor-navigation prototype to help visually impaired users receive spoken guidance. Python computer vision identified paths and obstacles while Arduino robotics handled movement. the demonstration used simulated cone obstacles rather than uncontrolled real-world navigation.</p><p class="archive-note">I learned how to connect computer-vision output to navigation instructions people could follow.</p>
 </div>
 <div class="archive-tech">Python · Arduino · Computer Vision · Robotics</div>
 </article>
@@ -128,7 +126,7 @@
 <div class="year">2024</div>
 <div>
 <h3>Airline Corporate Sentiment Analyzer</h3>
-<p>I developed an NLP workflow for studying airline reviews, news, and social-media text. Using more than 50,000 records, I applied preprocessing, BERT sentiment classification, topic modeling, and visual analysis to explore changes in customer perception.</p><p class="archive-note">Focus: preparing unstructured language data and interpreting model results responsibly.</p>
+<p>I developed an NLP workflow for studying airline reviews, news, and social-media text. Using more than 50,000 records, I applied preprocessing, BERT sentiment classification, topic modeling, and visual analysis to explore changes in customer perception.</p><p class="archive-note">It gave me more experience preparing text datasets and interpreting sentiment results.</p>
 </div>
 <div class="archive-tech">Python · BERT · NLTK · Pandas · scikit-learn</div>
 </article>
@@ -145,3 +143,4 @@
 <script src="script.js"></script>
 </body>
 </html>
+
