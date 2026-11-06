@@ -499,3 +499,28 @@ figure figcaption{font-size:.86rem;line-height:1.5;color:var(--muted);padding:12
  .cta-row,.contact-links{flex-direction:column;align-items:stretch}
 }
 @media(prefers-reduced-motion:reduce){[data-reveal]{transition:none!important}}
+
+#discussion{scroll-margin-top:6rem}
+.discussion-card{
+  max-width:760px;
+  padding:clamp(1.25rem,4vw,2.5rem);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  background:var(--white);
+}
+.discussion-card h2{margin:.4em 0}
+.discussion-card a{text-decoration:underline;text-underline-offset:3px}
+.discussion-card label{display:block;font-weight:700}
+.discussion-card textarea{
+  display:block;
+  width:100%;
+  margin:.45rem 0 1rem;
+  padding:.75rem;
+  border:1px solid var(--muted);
+  border-radius:12px;
+  color:var(--ink);
+  resize:vertical;
+}
+.discussion-card textarea:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.discussion-address{overflow-wrap:anywhere}
+#discussion-status:empty{margin:0}

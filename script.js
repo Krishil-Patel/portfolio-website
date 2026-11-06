@@ -53,3 +53,31 @@ if(!reduceMotion && "IntersectionObserver" in window){
 
 const year = document.getElementById("year");
 if(year) year.textContent = new Date().getFullYear();
+
+const discussionForm = document.getElementById("discussion-form");
+if(discussionForm){
+  const response = document.getElementById("discussion-response");
+  const emailLink = document.getElementById("discussion-email");
+  const status = document.getElementById("discussion-status");
+
+  response.addEventListener("input", () => {
+    response.setCustomValidity("");
+    status.textContent = "";
+  });
+
+  discussionForm.addEventListener("submit", event => {
+    event.preventDefault();
+    const message = response.value.trim();
+    if(!message){
+      response.setCustomValidity("Please enter a response.");
+      response.reportValidity();
+      return;
+    }
+
+    const body = encodeURIComponent(message.replace(/\r?\n/g, "\r\n"));
+    status.textContent = "Send the draft from your email app. If it does not open, copy your response into webmail.";
+    window.location.href = emailLink.href + "&body=" + body;
+  });
+
+  discussionForm.hidden = false;
+}
