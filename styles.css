@@ -524,3 +524,20 @@ figure figcaption{font-size:.86rem;line-height:1.5;color:var(--muted);padding:12
 .discussion-card textarea:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
 .discussion-address{overflow-wrap:anywhere}
 #discussion-status:empty{margin:0}
+
+/* Multimedia: native players, captioned images, and responsive gallery. */
+.portfolio-video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:var(--ink);border-radius:20px;border:1px solid var(--line)}
+.portfolio-audio{display:block;width:100%;margin-top:24px}
+.media-note{font-size:.9rem;color:var(--muted);margin-top:14px}
+.media-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px}
+.media-figure{margin:0;border:1px solid var(--line);border-radius:20px;background:var(--white);overflow:hidden}
+.media-figure img{width:100%;height:auto}
+.media-figure figcaption{padding:22px}
+.media-figure h3{font-size:1.25rem;line-height:1.3;margin-bottom:12px}
+.media-figure p{color:var(--muted)}
+.media-transcript{margin-top:20px;border:1px solid var(--line);border-radius:12px;padding:18px 22px}
+.media-transcript summary{cursor:pointer;font-weight:700}
+.media-transcript li{margin-top:12px}
+.media-transcript p{margin-top:14px}
+:focus-visible{outline:3px solid var(--blue);outline-offset:5px}
+@media(max-width:680px){.media-gallery{grid-template-columns:1fr}.media-figure figcaption{padding:18px}}
